@@ -2,8 +2,8 @@ import os
 import json
 import shutil
 
-INPUT_FOLDER = 'data/1_processed'
-OUTPUT_FOLDER = 'data/2_anonymised_test'
+INPUT_FOLDER = 'data/processed/pilot'
+OUTPUT_FOLDER = 'data/anonymised/pilot'
 KEYS_FOLDER = 'anon_keys'
 
 def process_files():

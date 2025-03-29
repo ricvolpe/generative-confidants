@@ -2,7 +2,7 @@ import os
 import docx2txt
 
 INPUT_FOLDER = "data/raw/interviews"
-OUTPUT_FOLDER = "data/1_processed"
+OUTPUT_FOLDER = "data/processed/pilot"
 
 def convert_docx_to_txt():
     # Create the output folder if it doesn't exist

@@ -11,7 +11,7 @@ COLUMS = {
               'QID12_TEXT', 'QID13_TEXT', 'QID14_TEXT', 'QID15', 'QID16',
               'QID17', 'QID18_TEXT'],
 }
-OUTPUT_FOLDER = 'data/1_processed'
+OUTPUT_FOLDER = 'data/processed/pilot'
 
 def process_csv(file_path):
     if not os.path.exists(OUTPUT_FOLDER):
