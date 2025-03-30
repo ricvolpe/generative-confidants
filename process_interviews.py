@@ -1,12 +1,12 @@
 import os
 import docx2txt
+import config
 
 INPUT_FOLDER = "data/raw/interviews"
-OUTPUT_FOLDER = "data/processed/pilot"
 
 def convert_docx_to_txt():
     # Create the output folder if it doesn't exist
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+    os.makedirs(config.PROCESSED_DATA, exist_ok=True)
 
     # Get all DOCX files in the input folder
     docx_files = [f for f in os.listdir(INPUT_FOLDER) if f.lower().endswith(".docx")]
@@ -22,7 +22,7 @@ def convert_docx_to_txt():
         # Generate the output file name with '_interview' suffix
         base_name = os.path.splitext(docx_file)[0]
         txt_file = f"{base_name}_interview.txt"
-        txt_path = os.path.join(OUTPUT_FOLDER, txt_file)
+        txt_path = os.path.join(config.PROCESSED_DATA, txt_file)
 
         try:
             # Extract text from the DOCX file
