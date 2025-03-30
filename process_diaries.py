@@ -24,7 +24,7 @@ def process_csv():
         'satisfaction': df['QID15'], 'trust': df['QID16'],
     })
     reformatted_df = reformatted_df.iloc[1:].reset_index(drop=True)
-    reformatted_df.to_csv('data/diaries_pilot_quant.csv', index=False)
+    reformatted_df.to_csv(config.QUANT_FILE, index=False)
 
 def create_transcript(row, pseudonym):
     chat_transcript = row[config.QTRICS_COLS['transcript']]

@@ -7,6 +7,7 @@ QTRICS_COLS = {
               'QID12_TEXT', 'QID13_TEXT', 'QID14_TEXT', 'QID15', 'QID16',
               'QID17', 'QID18_TEXT'],
 }
-PSEUDOS_INCLUDE = ["rico"]
-PROCESSED_DATA = 'data/processed/pilot-test2'
+PSEUDOS_INCLUDE = ['dodo', 'gale-hartley', 'rico']
+PROCESSED_DATA = 'data/processed/pilot'
+QUANT_FILE = 'data/diaries_pilot_quant.csv'
 ANON_DATA = 'data/anonymised/pilot'

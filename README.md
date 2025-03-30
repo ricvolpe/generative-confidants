@@ -2,6 +2,9 @@
 
 ## Data processing steps
 
+0. Set variables in `config.py` then complete steps 1-5 for a single bach of data
+processing and anonymisation.
+
 1. `process-diaries.py` processes raw diary entries CSV from qualtrics and produces
     * TXT files for each participant's diary entries and chat transcripts
     * CSV file with quantitative measures of diary entries
