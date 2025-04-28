@@ -7,8 +7,8 @@ cd ~/Programs/Python/textwash
 # Step 2 > Run the Python script with the variables
 python3 anon.py \
     --language en \
-    --input_dir "/Users/Ric/Programs/trust-me/gen-confidants/data/processed/pilot" \
-    --output_dir "/Users/Ric/Programs/trust-me/gen-confidants/data/processed/pilot/anon_keys" \
+    --input_dir "/Users/Ric/Programs/trust-me/gen-confidants/data/processed/B1" \
+    --output_dir "/Users/Ric/Programs/trust-me/gen-confidants/data/processed/B1/anon_keys" \
     --cpu \
     --entities ADDRESS,AGE,EMAIL_ADDRESS,LOCATION,OCCUPATION,ORGANIZATION,OTHER,PERSON_FIRSTNAME,PERSON_LASTNAME,PHONE_NUMBER
 

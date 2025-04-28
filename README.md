@@ -27,9 +27,9 @@ files, creating new copies so that the non-anonymised data is still available
 ## Conventions
 
 * Replacements use double square brackets. For example:
-    - [[NAME]]
-    - [[LOCATION]]
-    - or [[REDACTED]]
+    - [[name]]
+    - [[location]]
+    - or [[redacted]]
 
 * In the anonymised chat and interview transcripts, empty lines (i.e. `/n/n`) 
 indicate a change in speaker from human to AI or vice versa

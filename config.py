@@ -1,13 +1,12 @@
-QTRICS_CSV = 'data/raw/diaries_pilot.csv'
+QTRICS_CSV = 'data/raw/diaries.csv'
 QTRICS_COLS = {
-    'pseudonym': 'QID4_TEXT',
-    'transcript': 'QID6_TEXT',
-    'ai': 'QID5',
-    'diary': ['QID5', 'QID8_TEXT', 'QID9_TEXT', 'QID10_TEXT', 'QID11_TEXT', 
-              'QID12_TEXT', 'QID13_TEXT', 'QID14_TEXT', 'QID15', 'QID16',
-              'QID17', 'QID18_TEXT'],
+    'pseudonym': 'Q3',
+    'transcript': 'Q5',
+    'ai': 'Q4',
+    'diary': ['Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15', 'Q16'],
 }
-PSEUDOS_INCLUDE = ['dodo', 'gale-hartley', 'rico']
-PROCESSED_DATA = 'data/processed/pilot'
-QUANT_FILE = 'data/diaries_pilot_quant.csv'
-ANON_DATA = 'data/anonymised/pilot'
+PSEUDOS_INCLUDE = ['anny', 'camelia', 'carson', 'dil', 'fia', 'gab', 'jacqui',
+                   'jael', 'jayme', 'leigh', 'nirvana', 'valkyrie']
+PROCESSED_DATA = 'data/processed/B1'
+QUANT_FILE = 'data/diaries_quant.csv'
+ANON_DATA = 'data/anonymised/B1'

@@ -21,21 +21,22 @@ def convert_docx_to_txt():
 
         # Generate the output file name with '_interview' suffix
         base_name = os.path.splitext(docx_file)[0]
-        txt_file = f"{base_name}_interview.txt"
-        txt_path = os.path.join(config.PROCESSED_DATA, txt_file)
+        if base_name in config.PSEUDOS_INCLUDE:
+            txt_file = f"{base_name}_interview.txt"
+            txt_path = os.path.join(config.PROCESSED_DATA, txt_file)
 
-        try:
-            # Extract text from the DOCX file
-            text = docx2txt.process(docx_path)
+            try:
+                # Extract text from the DOCX file
+                text = docx2txt.process(docx_path)
 
-            # Write to text file
-            with open(txt_path, "w", encoding="utf-8") as f:
-                f.write(text)
+                # Write to text file
+                with open(txt_path, "w", encoding="utf-8") as f:
+                    f.write(text)
 
-            print(f"Converted {docx_file} to {txt_file}")
+                print(f"Converted {docx_file} to {txt_file}")
 
-        except Exception as e:
-            print(f"Error converting {docx_file}: {str(e)}")
+            except Exception as e:
+                print(f"Error converting {docx_file}: {str(e)}")
 
 
 if __name__ == "__main__":

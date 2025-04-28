@@ -17,15 +17,6 @@ def process_csv():
             create_transcript(row, pseudonym)
             create_diary(row, pseudonym, question_texts)
 
-    reformatted_df = pd.DataFrame({
-        'pseudonym': df[config.QTRICS_COLS['pseudonym']], 'entry_number': df['entry_number'],
-        'start': df['startDate'], 'end': df['endDate'], 'duration': df['duration'],
-        'platform': df['QID5'],
-        'satisfaction': df['QID15'], 'trust': df['QID16'],
-    })
-    reformatted_df = reformatted_df.iloc[1:].reset_index(drop=True)
-    reformatted_df.to_csv(config.QUANT_FILE, index=False)
-
 def create_transcript(row, pseudonym):
     chat_transcript = row[config.QTRICS_COLS['transcript']]
     if not pd.isna(chat_transcript) and chat_transcript != '':
