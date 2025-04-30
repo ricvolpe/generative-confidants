@@ -37,7 +37,7 @@ def create_diary(row, pseudonym, question_texts):
     with open(diary_path, 'w', encoding='utf-8') as f:
         for question in config.QTRICS_COLS['diary']:
             f.write(question_texts[question].split('.')[0].split('?')[0])
-            f.write("\n")
+            f.write("?\n")
             if not pd.isna(row[question]):
                 f.write(row[question])
                 f.write("\n\n")
