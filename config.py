@@ -5,8 +5,8 @@ QTRICS_COLS = {
     'ai': 'Q4',
     'diary': ['Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15', 'Q16'],
 }
-PSEUDOS_INCLUDE = ['anny', 'camelia', 'carson', 'dil', 'fia', 'gab', 'jacqui',
-                   'jael', 'jayme', 'leigh', 'nirvana', 'valkyrie']
-PROCESSED_DATA = 'data/processed/B1'
+PSEUDOS_INCLUDE = []
+PROCESSED_DATA = 'data/processed'
 QUANT_FILE = 'data/diaries_quant.csv'
-ANON_DATA = 'data/anonymised/B1'
+ANON_DATA = 'data/anonymised'
+

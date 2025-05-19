@@ -20,7 +20,7 @@ def process_csv():
 def create_transcript(row, pseudonym):
     chat_transcript = row[config.QTRICS_COLS['transcript']]
     if not pd.isna(chat_transcript) and chat_transcript != '':
-        chat_filename = f"{pseudonym}_{row['entry_number']}_transcript.txt"
+        chat_filename = f"{pseudonym}_{row['entry_number']}_chat.txt"
         chat_path = os.path.join(config.PROCESSED_DATA, chat_filename)
         cleaned_transcript = clean_transcript(chat_transcript)
         with open(chat_path, 'w', encoding='utf-8') as f:
